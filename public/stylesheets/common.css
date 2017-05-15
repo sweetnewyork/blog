@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  font-size: 18px;
+  color: #33475f;
+  font-family: Helvetica, sans-serif; }
+
+html, body, .fill-height {
+  height: 100%; }
+
+body {
+  background-color: #f0f4f5; }
+
+a {
+  text-decoration: none; }
+
+header {
+  box-shadow: 0 1px 0px #bbb;
+  -moz-box-shadow: 0 1px 0px #bbb;
+  -webkit-box-shadow: 0 1px 0px #bbb;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  background-color: #fff; }
+  header nav {
+    margin: 0 auto;
+    width: 720px; }
+    header nav * {
+      float: left; }
+  header img {
+    padding: 8px 20px;
+    height: 40px; }
+  header li {
+    float: left;
+    list-style-type: none; }
+  header a {
+    padding: 10px 20px;
+    line-height: 36px;
+    cursor: pointer; }
+    header a:hover {
+      background-color: #f0f4f5; }
+  header input {
+    display: none; }
+    header input:checked + label {
+      box-shadow: 0 1px 0px #eb4f38;
+      -moz-box-shadow: 0 1px 0px #eb4f38;
+      -webkit-box-shadow: 0 1px 0px #eb4f38;
+      color: #eb4f38; }
+
+footer {
+  margin-top: -144px;
+  background-color: #fff;
+  border-top: 1px solid #bbb;
+  padding: 20px 0px; }
+  footer nav {
+    width: 600px;
+    margin: auto; }
+  footer dl, footer dt, footer dd {
+    padding: 5px 0px; }
+  footer dl {
+    float: left;
+    width: 200px; }
+  footer span, footer a {
+    color: #888; }
+  footer img {
+    width: 90px; }
+
+.clear-fix:before, .clear-fix:after {
+  content: " ";
+  display: table; }
+
+.clear-fix:after {
+  clear: both; }
+section {
+  margin: 0 auto;
+  padding-top: 56px;
+  padding-bottom: 20px;
+  min-height: 100%;
+  width: 960px; }
+  section .brand-box, section .card-box {
+    background-color: #fff; }
+  section .brand-box {
+    width: 940px;
+    margin: 10px;
+    text-align: center; }
+  section .card-box {
+    float: left;
+    width: 300px;
+    margin: 10px; }
+    section .card-box .card-header {
+      width: 300px; }
+    section .card-box .card-body {
+      width: 280px;
+      padding: 10px; }
+  section .footer-holder {
+    width: 960px;
+    height: 144px; }

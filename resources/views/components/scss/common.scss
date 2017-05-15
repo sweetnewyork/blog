@@ -1,0 +1,105 @@
+@import 'variable';
+@import 'mixin';
+
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  font-size: $fontSize;
+  color: $fontColor;
+  font-family: $fontStack;
+}
+
+html, body, .fill-height {
+  height: 100%;
+}
+
+body {
+  background-color: $baseColor;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  @include shadow($shadowColor);
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  background-color: $pageColor;
+
+  nav {
+    margin: 0 auto;
+    width: 720px;
+
+    * {
+      float: left;
+    }
+  }
+
+  img {
+    padding: 8px 20px;
+    height: 40px;
+  }
+
+  li {
+    float: left;
+    list-style-type: none;
+  }
+
+  a {
+    padding: 10px 20px;
+    line-height: 36px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $baseColor;
+    }
+  }
+
+  input {
+    display: none;
+
+    &:checked + label {
+      @include shadow($warningColor);
+      color: $warningColor;
+    }
+  }
+}
+
+footer {
+  margin-top: -144px;
+  background-color: $pageColor;
+  border-top: 1px solid $shadowColor;
+  padding: 20px 0px;
+
+  nav {
+    width: 600px;
+    margin: auto;
+  }
+  dl, dt, dd {
+    padding: 5px 0px;
+  }
+  dl {
+    float: left;
+    width: 200px;
+  }
+  span, a {
+    color: $lightColor;
+  }
+  img {
+    width: 90px;
+  }
+}
+
+.clear-fix {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}

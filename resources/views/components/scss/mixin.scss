@@ -1,0 +1,11 @@
+@mixin shadow($shadowColor) {
+  box-shadow: 0 1px 0px $shadowColor;
+  -moz-box-shadow: 0 1px 0px $shadowColor;
+  -webkit-box-shadow: 0 1px 0px $shadowColor;
+}
+
+@mixin opacity {
+  filter: alpha(opacity=80);
+  -moz-opacity: 0.8;
+  opacity: 0.8;
+}

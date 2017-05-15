@@ -1,0 +1,40 @@
+@import 'variable';
+@import 'mixin';
+
+section {
+  margin: 0 auto;
+  padding-top: 56px;
+  padding-bottom: 20px;
+  min-height: 100%;
+  width: 960px;
+
+  .brand-box, .card-box {
+    background-color: $pageColor;
+  }
+
+  .brand-box {
+    width: 940px;
+    margin: 10px;
+    text-align: center;
+  }
+
+  .card-box {
+    float: left;
+    width: 300px;
+    margin: 10px;
+
+    .card-header {
+      width: 300px;
+    }
+
+    .card-body {
+      width: 280px;
+      padding: 10px;
+    }
+  }
+
+  .footer-holder {
+    width: 960px;
+    height: 144px;
+  }
+}
