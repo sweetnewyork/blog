@@ -15,8 +15,26 @@ $app->get('/', function () use ($app) {
     return view('index');
 });
 
-$app->get('/article', 'ArticleController@findAll');
+$app->get('/tech', function () use ($app) {
+    return view('index');
+});
 
-$app->get('/article/type/{type}', 'ArticleController@findType');
+$app->get('/math', function () use ($app) {
+    return view('index');
+});
 
-$app->get('/article/id/{id}', 'ArticleController@findOne');
+$app->get('/life', function () use ($app) {
+    return view('index');
+});
+
+$app->group(['prefix' => 'api'], function () use ($app) {
+    
+    $app->get('/article', 'ArticleController@findAll');
+
+    $app->get('/article/type/{type}', 'ArticleController@findType');
+
+    $app->get('/article/id/{id}', 'ArticleController@findOne');
+
+});
+
+

@@ -1,21 +1,26 @@
-# Lumen PHP Framework
+#我的个人博客
 
-[![Build Status](https://travis-ci.org/laravel/lumen-framework.svg)](https://travis-ci.org/laravel/lumen-framework)
-[![Total Downloads](https://poser.pugx.org/laravel/lumen-framework/d/total.svg)](https://packagist.org/packages/laravel/lumen-framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/lumen-framework/v/stable.svg)](https://packagist.org/packages/laravel/lumen-framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/lumen-framework/v/unstable.svg)](https://packagist.org/packages/laravel/lumen-framework)
-[![License](https://poser.pugx.org/laravel/lumen-framework/license.svg)](https://packagist.org/packages/laravel/lumen-framework)
+项目被改造了一半，由于临近毕业，面临**毕业答辩**的压力，所以尚未完成。项目已经完成的部分有：
 
-Laravel Lumen is a stunningly fast PHP micro-framework for building web applications with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Lumen attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as routing, database abstraction, queueing, and caching.
+1. 页面设计
+2. react静态页面部分编写
+3. react-router-dom页面部分实现（不过当时路由规划不合理，需要结合redux改进）
+4. laravle restful接口编写
 
-## Official Documentation
+项目尚未完成的部分有：
+1. redux状态机的编写
+2. redux-fetch中间件的编写
 
-Documentation for the framework can be found on the [Lumen website](http://lumen.laravel.com/docs).
+运行项目在根目录下执行：
+```
+    laravle install
+    npm install
+    webpack
+    php -S localhost:80 -t public
+```
 
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Lumen framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+目前可以使用的域名有：
+1. http://localhost
+2. http://localhost/article
+3. http://localhost/article/type/{type}
+4. http://localhost/article/id/{id}
