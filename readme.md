@@ -7,7 +7,7 @@
 1. 页面设计
 2. react静态页面部分编写
 3. react-router-dom页面部分实现（不过当时路由规划不合理，需要结合redux改进）
-4. laravle restful接口编写
+4. laravel restful接口编写
 
 项目尚未完成的部分有：
 1. redux状态机的编写
@@ -15,7 +15,7 @@
 
 运行项目在根目录下执行：
 ```
-    laravle install
+    laravel install
     npm install
     webpack
     php -S localhost:80 -t public
